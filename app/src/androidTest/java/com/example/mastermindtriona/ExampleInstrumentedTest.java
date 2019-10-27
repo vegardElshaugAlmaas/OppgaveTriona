@@ -1,4 +1,4 @@
-package com.example.oppgavetriona;
+package com.example.mastermindtriona;
 
 import android.content.Context;
 
@@ -22,6 +22,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
 
-        assertEquals("com.example.oppgavetriona", appContext.getPackageName());
+        assertEquals("com.example.mastermindtriona", appContext.getPackageName());
     }
 }

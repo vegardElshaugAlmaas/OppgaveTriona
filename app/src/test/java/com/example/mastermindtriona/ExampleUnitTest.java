@@ -1,4 +1,4 @@
-package com.example.oppgavetriona;
+package com.example.mastermindtriona;
 
 import org.junit.Test;
 

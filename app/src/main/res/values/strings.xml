@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">oppgaveTriona</string>
+    <string name="app_name">mastermindTriona</string>
+    <string name="end_point">https://us-central1-triona-mastermind.cloudfunctions.net/runGame</string>
 </resources>

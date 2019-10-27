@@ -6,13 +6,50 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/playerGueses"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginBottom="200dp"
+        android:layout_marginTop="200dp">
+
+        <ListView
+            android:id="@+id/simpleListView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@+id/playerGueses"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.036"
+            tools:layout_editor_absoluteX="0dp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/guesButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:layout_marginEnd="44dp"
+        android:layout_marginRight="44dp"
+        android:layout_marginBottom="16dp"
+        android:maxLength="4"
+        android:text="gues"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/playerGueses"
+        android:layout_width="178dp"
+        android:layout_height="51dp"
+        android:layout_marginBottom="16dp"
+        android:maxLength="4"
+        android:digits="AaBbCcDdEeFf"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guesButton"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="Gues here" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
